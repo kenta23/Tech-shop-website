@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --navBar:  #5e6ca8;
+    --logo: #1d1c3a;
+    --mainColor: #424774;
+    --light: #292d58;
+}
+::selection {
+    color: #fff;
+    background-color: var(--mainColor);
+    
+}
+
+
+.main-container {
+    width: 100%;
+    max-width: 1400px;
+   
+}
+
+.text-center {
+    position: relative;
+}
+
+
+/*MARKETPLACE styles */
+
+.img-container img {
+    width: 320px;
+    height: 360px;
+    border-radius: 10px;
+}
+.img-container {
+    width: 320px;
+    height: 360px;
+    position: relative;
+    overflow-x: hidden;    
+}
+.container-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+   
+}
+.text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(224, 228, 250, 0.5); 
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+}
+.text-container:hover {
+    opacity: 1;
+    top: 0;
+}
+.text-container h2 {
+    text-align: center;
+    font-size: 25px;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s linear;
+    opacity: 1;
+    position: absolute;
+    color: #17110d;
+    font-family: sans-serif;
+}
+
+/*For smaller sizes when viewing the images */
+
+@media screen and (max-width: 1057px) {
+    
+   .container-img {
+     flex-wrap: wrap;
+     grid-template-columns: auto auto;
+   }
+
+}
+/*for Galaxy Fold */ 
+@media screen and (max-width: 326px) {
+    
+    .img-container img, .text-container, .img-container{
+       width: 100%;
+
+    }
+   
+   
+ 
+ }
+ @media screen and (max-width: 390px) {
+     
+  
+   
+ 
+ }
+ 
+
+
+@media screen and (max-width: 708px) {
+    
+    .container-img {
+    justify-content: center;
+      grid-template-columns: auto;
+    }
+ 
+ }
+
+ /*Sale products */
+ .col-6 img {
+      width: 70%;
+      margin-bottom: 20%;    
+ }
+ .col-6 h2 {
+     text-align: center;
+     margin: auto;
+ }
+ .col-6  {
+    justify-content: center;
+    align-items: center; 
+ }
+
+ .carousel-item img {
+     width: 100% ;
+     height: 500px;
+     
+ }
+ .carousel {
+     display: flex;
+     justify-content: center;
+     margin: auto;
+     text-align: center;
+     width: 70%;
+  
+ }
+ .carousel-inner {
+    border-radius: 10px;
+ }
